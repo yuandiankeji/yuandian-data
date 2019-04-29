@@ -160,3 +160,4 @@ local.properties
 # End of https://www.gitignore.io/api/eclipse
 
 /yuandian-server/yuandian-data/src/main/java/
+/yuandian-data/src/main/java/
