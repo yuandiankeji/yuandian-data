@@ -27,9 +27,13 @@ message PAuth {
     optional string token = 3;
 }
 
-//cmd=4 return none
+//cmd=1004 return PChatInfo
 message PSendChat {
-    optional int64 uid = 1;
-    optional int64 toUid = 2;
-    optional string context = 3;
+    optional  PChatInfo chat =1;
+}
+
+//cmd=1005  return 获取聊天记录
+message PGetChatRecord {
+    optional int64 targetId = 1;
+    optional int64 limit = 2;
 }
